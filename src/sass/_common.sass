@@ -152,6 +152,9 @@ img
 .i-pt-20
 	padding-top: 20px
 
+.bg-white
+	background-color: #fff
+
 .offer
 	position: relative
 	font-size: 19px
@@ -168,6 +171,8 @@ img
 		background-color: $yellow
 
 .insta
+	padding: 50px 0
+	border-bottom: 2px solid #fff
 
 	&__top
 		text-align: center
@@ -201,6 +206,44 @@ img
 	background-image: none
 	position: absolute
 	top: 275px
+
+.arrow-button-next
+	position: absolute
+	bottom: 0
+	left: 0
+	width: 40px
+	height: 2px
+	background-color: $brown
+	z-index: 100
+	cursor: pointer
+
+.arrow-button-prev
+	position: absolute
+	bottom: 0
+	right: 0
+	width: 40px
+	height: 2px
+	background-color: $brown
+	z-index: 100
+	cursor: pointer
+
+.icon
+	display: inline-block
+
+	&.is-arrow-right
+		width: 15px
+		height: 15px
+
+		&:before
+			border-color: transparent transparent #5c4b51 transparent
+
+	//&:before
+		margin-top: -5px
+		display: block
+		content: ''
+		position: absolute
+		width: 40px
+		height: 2px
 
 .section-title
 	position: relative
@@ -239,6 +282,7 @@ img
 	width: 100%
 	position: relative
 	cursor: pointer
+	box-sizing: border-box
 	+clr
 
 	&__left,
@@ -250,6 +294,8 @@ img
 		background-position: center center
 		height: 540px
 		text-align: center
+		border-bottom: 3px solid #fff
+		border-top: 3px solid #fff
 
 		&.bg-fruits
 			background-image: url("../img/fruits.jpg")
@@ -258,6 +304,8 @@ img
 			background-image: url("../img/raspber.jpg")
 
 	&__left
+		border-right: 3px solid #fff
+
 		.badge
 			position: absolute
 			top: 50%

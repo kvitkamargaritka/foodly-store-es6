@@ -222,6 +222,10 @@ img {
   padding-top: 20px;
 }
 
+.bg-white {
+  background-color: #fff;
+}
+
 .offer {
   position: relative;
   font-size: 19px;
@@ -237,6 +241,11 @@ img {
   height: 3px;
   width: 130px;
   background-color: #f3b562;
+}
+
+.insta {
+  padding: 50px 0;
+  border-bottom: 2px solid #fff;
 }
 
 .insta__top {
@@ -280,6 +289,41 @@ img {
   background-image: none;
   position: absolute;
   top: 275px;
+}
+
+.arrow-button-next {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 40px;
+  height: 2px;
+  background-color: #5c4b51;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.arrow-button-prev {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 40px;
+  height: 2px;
+  background-color: #5c4b51;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.icon {
+  display: inline-block;
+}
+
+.icon.is-arrow-right {
+  width: 15px;
+  height: 15px;
+}
+
+.icon.is-arrow-right:before {
+  border-color: transparent transparent #5c4b51 transparent;
 }
 
 .section-title {
@@ -326,6 +370,7 @@ img {
   width: 100%;
   position: relative;
   cursor: pointer;
+  box-sizing: border-box;
   *zoom: 1;
 }
 
@@ -343,6 +388,8 @@ img {
   background-position: center center;
   height: 540px;
   text-align: center;
+  border-bottom: 3px solid #fff;
+  border-top: 3px solid #fff;
 }
 
 .sale__left.bg-fruits, .sale__right.bg-fruits {
@@ -351,6 +398,10 @@ img {
 
 .sale__left.bg-rasper, .sale__right.bg-rasper {
   background-image: url("../img/raspber.jpg");
+}
+
+.sale__left {
+  border-right: 3px solid #fff;
 }
 
 .sale__left .badge {
@@ -421,11 +472,15 @@ img {
   clear: both;
 }
 
-.col-20 {
+.l-col-25 {
+  width: 25%;
+}
+
+.l-col-20 {
   width: 20%;
 }
 
-.col-60 {
+.l-col-60 {
   width: 60%;
 }
 
@@ -474,9 +529,12 @@ img {
   clear: both;
 }
 
+.footer__top {
+  padding: 35px 0;
+}
+
 .footer__col {
   float: left;
-  width: 24%;
 }
 
 .badge {
@@ -735,6 +793,7 @@ img {
 
 .recipes {
   padding: 100px 0;
+  background-color: #fff;
   *zoom: 1;
 }
 
@@ -1002,6 +1061,10 @@ img {
   background-image: url("../img/acorn.jpg");
 }
 
+.list.is-horizontal .list__link.bg-apple-red {
+  background-image: url("../img/apple-red.jpg");
+}
+
 .input {
   width: 100%;
 }
@@ -1108,7 +1171,7 @@ img {
 }
 
 .product {
-  width: 355px;
+  width: 356px;
   position: relative;
 }
 
@@ -1117,11 +1180,12 @@ img {
 }
 
 .product__img {
-  width: 350px;
+  width: 100%;
   height: 300px;
   background-position: 50%;
   -webkit-transition: opacity .3s ease-in-out;
   transition: opacity .3s ease-in-out;
+  border-right: 3px solid #fff;
 }
 
 .product__img:before {
@@ -1159,6 +1223,7 @@ img {
 
 .product__bottom {
   text-align: center;
+  padding-bottom: 20px;
 }
 
 .product__name {
@@ -1289,6 +1354,7 @@ img {
 .item__name {
   text-transform: uppercase;
   margin: 20px 0;
+  line-height: 1.4;
 }
 
 .item__descr {
@@ -1303,7 +1369,6 @@ img {
   height: 77px;
   background-size: cover;
   background-repeat: no-repeat;
-  font-family: 'bitter400ital', Arial, sans-serif;
 }
 
 .item__img.bg-apple {

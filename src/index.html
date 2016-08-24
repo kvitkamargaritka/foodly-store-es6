@@ -22,7 +22,10 @@
         media="all"
         href="css/app.css">
 
+  <script src="jquery.js"></script>
+  <script src="swiper.jquery.min.js"></script>
   <script src="js/app.js"></script>
+
 </head>
 <body>
 
@@ -30,11 +33,11 @@
   <div class="container">
     <div class="header__top">
 
-      <div class="header__left col-20">
+      <div class="header__left l-col-20">
         <div class="currency i-text-upper">
-      <span class="currency__text">usd
-        <i class="fa fa-plus"></i>
-      </span>
+          <span class="currency__text">usd
+            <i class="fa fa-plus"></i>
+          </span>
 
           <!--<ul class="currency__dropdown i-text-center">-->
           <!--<li class="currency__el">usd</li>-->
@@ -43,12 +46,10 @@
           <!--<li class="currency__el">aud</li>-->
           <!--<li class="currency__el">eur</li>-->
           <!--</ul>-->
-        </div>
-        <!-- end currency -->
-      </div>
-      <!-- end header__left -->
+        </div><!-- end currency -->
+      </div><!-- end header__left -->
 
-      <div class="header__center col-60">
+      <div class="header__center l-col-60">
         <div class="logo">
           <div class="logo__left">
             <span class="logo__descr">Organic food by Whytes'</span>
@@ -61,20 +62,17 @@
           <div class="logo__right">
             <span class="logo__descr">from Manitoba, Canada</span>
           </div>
-        </div>
-        <!-- end logo -->
-      </div>
-      <!-- end header__center -->
+        </div><!-- end logo -->
+      </div><!-- end header__center -->
 
-      <div class="header__right col-20">
-      <span class="cart">$0.00
-        <i class="fa fa-lock"></i>
-        <span class="cart__counter is-right-top">0</span>
-      </span>
+      <div class="header__right l-col-20">
+        <span class="cart">$0.00
+          <i class="fa fa-lock"></i>
+          <span class="cart__counter is-right-top">0</span>
+        </span>
       </div>
 
-    </div>
-    <!-- end header__top -->
+    </div><!-- end header__top -->
 
     <div class="header__bottom">
 
@@ -90,11 +88,11 @@
 
           <div class="nav__dropdown">
             <ul class="list is-horizontal">
+
               <li class="list__el">
                 <a href="#" class="item i-text-center">
                   <div class="item__img bg-apple"></div>
                   <h5 class="item__name">Fresh</h5>
-
                   <p class="item__descr i-text-left">
                     You’ll find here a lot of delightful vegtables & fruits
                     that
@@ -108,7 +106,6 @@
                 <a href="#" class="item i-text-center">
                   <div class="item__img bg-snowflake"></div>
                   <h5 class="item__name">Frozen</h5>
-
                   <p class="item__descr i-text-left">
                     Look through fruits & vegetables that are saved for later
                     due to the <span
@@ -122,7 +119,6 @@
                 <a href="#" class="item i-text-center">
                   <div class="item__img bg-dried"></div>
                   <h5 class="item__name">Dried</h5>
-
                   <p class="item__descr i-text-left">
                     We transform herbs, fruits & vegetables from fresh to
                     <span class="is-bitter i-weight-600">dreid</span>
@@ -135,7 +131,6 @@
                 <a href="#" class="item i-text-center">
                   <div class="item__img bg-bottle"></div>
                   <h5 class="item__name">Liquid</h5>
-
                   <p class="item__descr i-text-left">
                     Almost every cooking requires some oil or sauses in the
                     kitchen. We got you covered here with specially crafted
@@ -143,12 +138,10 @@
                   </p>
                 </a><!-- end item -->
               </li>
-
             </ul>
-          </div>
-          <!-- end nav__dropdown -->
-        </div>
-        <!-- end nav__el -->
+
+          </div><!-- end nav__dropdown -->
+        </div><!-- end nav__el -->
 
         <div class="nav__el">
           <a href="#" class="nav__link">Blog</a>
@@ -162,12 +155,12 @@
         <div class="nav__el">
           <a href="#" class="nav__link">Contact</a>
         </div>
-      </nav>
-      <!-- end nav -->
+      </nav><!-- end nav -->
 
-    </div>
-    <!-- end header__bottom -->
-  </div>
+    </div><!-- end header__bottom -->
+
+  </div><!-- end container -->
+
 </header>
 
 <div class="row">
@@ -200,7 +193,7 @@
           </span>
       </a>
     </div>
-  </div>
+  </div><!-- end sale -->
 </div>
 
 <div class="row">
@@ -301,8 +294,10 @@
     <div class="swiper-pagination"></div>
 
     <!-- If we need navigation buttons -->
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
+    <div class="arrow-button-prev">
+      <span class="icon is-arrow-right"></span>
+    </div>
+    <div class="arrow-button-next"></div>
 
     <!-- If we need scrollbar -->
     <div class="swiper-scrollbar"></div>
@@ -316,9 +311,9 @@
       <h3 class="title i-weight-100 is-white i-text-upper">
         Bussiness<br> values<br> attitude
       </h3>
-          <span class="bg-title is-white is-x-10 is-y-0">
-            Family
-          </span>
+      <span class="bg-title is-white is-x-10 is-y-0">
+        Family
+      </span>
     </div>
 
     <div class="subscribe__right">
@@ -356,7 +351,7 @@
   </div><!-- end subscribe -->
 </div>
 
-<div class="row">
+<div class="row bg-white">
   <div class="container">
     <div class="recipes">
 
@@ -382,7 +377,7 @@
               <h4 class="title is-bitter">
                 Pasta with Swordfish and Cherry Tomato Sauce
               </h4>
-              
+
             </a>
             <time class="recipes__date">February 23, 2016</time>
             <p class="recipes__descr">
@@ -399,8 +394,171 @@
   </div>
 </div>
 
-<!--<script src="lib/system.js"></script>-->
-<!--<script src="config.js"></script>-->
-<!--<script>System.import('./js/app')</script>-->
+<div class="row">
+  <div class="insta">
+
+    <div class="insta__top">
+      <h1 class="title i-weight-200 i-text-upper">instagram</h1>
+      <p class="insta__descr">
+        let’s have a look what is behind the scenes
+      </p>
+    </div>
+
+    <div class="insta__bottom">
+      <ul class="list is-horizontal">
+        <li class="list__el">
+          <a href="#" target="_blank" class="list__link bg-plum"></a>
+        </li>
+        <li class="list__el">
+          <a href="#" target="_blank" class="list__link bg-apple"></a>
+        </li>
+        <li class="list__el">
+          <a href="#" target="_blank" class="list__link bg-pie"></a>
+        </li>
+        <li class="list__el">
+          <a href="#" target="_blank" class="list__link bg-radish"></a>
+        </li>
+        <li class="list__el">
+          <a href="#" target="_blank" class="list__link bg-dill"></a>
+        </li>
+        <li class="list__el">
+          <a href="#" target="_blank" class="list__link bg-bow"></a>
+        </li>
+        <li class="list__el">
+          <a href="#" target="_blank" class="list__link bg-acorn"></a>
+        </li>
+        <li class="list__el">
+          <a href="#" target="_blank" class="list__link bg-apple-red"></a>
+        </li>
+      </ul>
+    </div>
+  </div><!-- end insta -->
+</div>
+
+<footer class="footer">
+
+  <div class="footer__top">
+    <div class="container">
+      <div class="footer__col l-col-25">
+        <h5 class="title is-bitter i-text-upper">More info</h5>
+        <ul class="list">
+          <li class="list__el">
+            <a href="#"
+               title="About us"
+               class="list__link">About us</a>
+          </li>
+          <li class="list__el">
+            <a href="#"
+               title="Search"
+               class="list__link">Search</a>
+          </li>
+          <li class="list__el">
+            <a href="#"
+               title="Terms & Conditions"
+               class="list__link">Terms & Conditions</a>
+          </li>
+          <li class="list__el">
+            <a href="#"
+               title="Return Policy"
+               class="list__link">Return Policy</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__col l-col-25">
+        <h5 class="title is-bitter i-text-upper">Foodly family</h5>
+        <ul class="list">
+          <li class="list__el">
+            <a href="#"
+               title="Food Markets"
+               class="list__link">Food Markets</a>
+          </li>
+          <li class="list__el">
+            <a href="#"
+               title="Eco-activity"
+               class="list__link">Eco-activity</a>
+          </li>
+          <li class="list__el">
+            <a href="#"
+               title="Awards"
+               class="list__link">Awards</a>
+          </li>
+          <li class="list__el">
+            <a href="#"
+               title="Recipes"
+               class="list__link">Recipes</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__col l-col-25">
+        <h5 class="title is-bitter i-text-upper">Follow us</h5>
+        <div class="social">
+          <ul class="social__list">
+            <li class="social__el">
+              <a class="social__link" href="#" target="_blank">
+                <i class="fa fa-facebook"></i>
+              </a>
+            </li>
+            <li class="social__el">
+              <a class="social__link" href="#" target="_blank">
+                <i class="fa fa-twitter"></i>
+              </a>
+            </li>
+            <li class="social__el">
+              <a class="social__link" href="#" target="_blank">
+                <i class="fa fa-pinterest"></i>
+              </a>
+            </li>
+            <li class="social__el">
+              <a class="social__link" href="#" target="_blank">
+                <i class="fa fa-instagram"></i>
+              </a>
+            </li>
+            <li class="social__el">
+              <a class="social__link" href="#" target="_blank">
+                <i class="fa fa-youtube"></i>
+              </a>
+            </li>
+            <li class="social__el">
+              <a class="social__link" href="#" target="_blank">
+                <i class="fa fa-tumblr"></i>
+              </a>
+            </li>
+          </ul>
+        </div><!-- end social -->
+      </div>
+      <div class="footer__col l-col-25">
+        <h5 class="title is-bitter i-text-upper">Payment methods</h5>
+        <div class="payments">
+          <ul class="payments__list">
+            <li class="payments__el">
+              <i class="fa fa-cc-visa"></i>
+            </li>
+            <li class="payments__el">
+              <i class="fa fa-cc-mastercard"></i>
+            </li>
+            <li class="payments__el">
+              <i class="fa fa-cc-amex"></i>
+            </li>
+            <li class="payments__el">
+              <i class="fa fa-cc-paypal"></i>
+            </li>
+            <li class="payments__el">
+              <i class="fa fa-cc-diners-club"></i>
+            </li>
+            <li class="payments__el">
+              <i class="fa fa-cc-discover"></i>
+            </li>
+          </ul>
+        </div><!-- end payments -->
+      </div>
+    </div>
+  </div>
+
+  <div class="footer__bottom"></div>
+</footer>
+
+<script src="lib/system.js"></script>
+<script src="config.js"></script>
+<script>System.import('./js/app')</script>
 </body>
 </html>
