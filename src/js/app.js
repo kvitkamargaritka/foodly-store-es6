@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
 
-  var mySwiper = new Swiper ('.swiper-container', {
+  var mySwiper = new Swiper ('.swiper-container.is-small', {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
@@ -14,7 +14,7 @@ $(document).ready(function() {
     scrollbar: '.swiper-scrollbar'
   });
 
-  var mySwiper = new Swiper ('.swiper-container.is-product', {
+  var mySwiper2 = new Swiper ('.swiper-container.is-product', {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
@@ -22,12 +22,15 @@ $(document).ready(function() {
 
     // Navigation arrows
     nextButton: '.arrow-button-next',
-    prevButton: '.arrow-button-prev',
+    prevButton: '.arrow-button-prev'
 
-
-    // And if we need scrollbar
-    scrollbar: '.swiper-scrollbar'
   });
 
+  var mySwiper3 = new Swiper ('.swiper-container.is-general', {
+    // Optional parameters
+    direction: 'horizontal',
+    pagination: '.swiper-pagination',
+    paginationClickable: true
+  });
 
 });
