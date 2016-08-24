@@ -1,0 +1,42 @@
+.input
+  width: 100%
+
+  &__mail
+    padding: 20px 150px 20px 20px
+    width: 100%
+    font-size: 16px
+    border-radius: 3px
+
+    &:focus
+      outline: none
+
+  &__subscr
+    height: 58px
+    line-height: 58px
+    padding-right: 30px
+    background-color: #fff
+    color: $brown
+    font-family: raleway, sans-serif
+    font-weight: 700
+    font-size: 16px
+    letter-spacing: 1.6px
+    text-transform: uppercase
+    cursor: pointer
+    +tr(all .3s ease-in-out)
+    &:hover
+      color: $red
+
+  &__search
+    width: 100%
+    border-bottom: 1px solid $brown
+    font-size: 16px
+    color: $brown
+    padding: 3px 0 12px 0
+    background-color: transparent
+    +tr(all .3s ease-in-out)
+
+  &.is-search
+    position: relative
+    +tr(all .3s ease-in-out)
+
+

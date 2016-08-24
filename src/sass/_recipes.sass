@@ -1,0 +1,44 @@
+.recipes
+  padding: 100px 0
+  +clr
+
+  &__top
+    position: relative
+    margin-bottom: 50px
+
+  &__left
+    float: left
+    width: 57%
+
+  &__right
+    float: right
+    width: 43%
+
+  &__sub
+    padding-top: 15px
+
+  &__link
+    +tr(all .3s ease-in-out)
+
+    &:hover
+      color: $red
+
+  &__info
+    text-align: center
+
+  &__date
+    color: #d1cacc
+    font-size: 16px
+
+  &__descr
+    line-height: 30px
+    padding-top: 20px
+
+  &__author
+    padding-top: 20px
+    color: #d1cacc
+
+  &__date,
+  &__author
+    font-family: 'Bitter', serif
+    font-weight: 400

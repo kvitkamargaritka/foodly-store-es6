@@ -1,0 +1,91 @@
+.nav
+  height: 90px
+  line-height: 90px
+  position: relative
+  text-align: center
+  background-color: #fff
+  z-index: 5
+
+  &__el
+    display: inline-block
+
+    &:hover
+
+      .nav__dropdown
+        display: block
+
+  &__link
+    display: inline-block
+    padding: 0 22px
+    font-family: raleway, sans-serif
+    font-weight: 200
+    transition: all .3s ease-in-out
+
+    &:hover
+      color: $red
+      .plus:after,
+      .plus:before
+        background-color: $red
+      .plus:before
+        height: 0
+
+  &__dropdown
+    position: absolute
+    display: none
+    top: 60px
+    left: 50%
+    transform: translateX(-50%)
+    padding: 50px
+    width: 1000px
+    background-color: #fff
+    text-align: center
+    box-sizing: border-box
+    box-shadow: 0 10px 30px 0 rgba(92,75,81,0.1)
+    z-index: 10
+
+    //&.bg-apple,
+    //&.bg-snowflake,
+    //&.bg-dried,
+    //&.bg-bottle
+    //  display: inline-block
+    //  width: 100px
+    //  height: 77px
+    //  background-size: cover
+    //  background-repeat: no-repeat
+    //
+    //&.bg–apple
+    //  background-image: url("../img/ico-apple.png")
+    //
+    //&.bg–snowflake
+    //  background-image: url("../img/snowflake.png")
+    //
+    //&.bg–dried
+    //  background-image: url("../img/dried.png")
+    //
+    //&.bg–bottle
+    //  background-image: url("../img/bottle.png")
+
+.plus
+  display: inline-block
+  width: 8px
+  height: 8px
+  position: relative
+
+  &:after,
+  &:before
+    content: ''
+    position: absolute
+    background-color: $brown
+
+  &:after
+    bottom: 3px
+    right: 0
+    width: 8px
+    height: 2px
+
+  &:before
+    bottom: 0
+    right: 3px
+    width: 2px
+    height: 8px
+    +tr(all .3s ease)

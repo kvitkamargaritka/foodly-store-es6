@@ -1,0 +1,32 @@
+.item
+  width: 200px
+  margin-right: 25px
+
+  &__name
+    text-transform: uppercase
+    margin: 20px 0
+
+  &__descr
+    font-size: 14px
+    color: $grey
+
+  &__img
+    color: $brown
+    display: inline-block
+    width: 100px
+    height: 77px
+    background-size: cover
+    background-repeat: no-repeat
+    +h400i
+
+    &.bg-apple
+      background-image: url("../img/ico-apple.png")
+
+    &.bg-snowflake
+      background-image: url("../img/snowflake.png")
+
+    &.bg-dried
+      background-image: url("../img/dried.png")
+
+    &.bg-bottle
+      background-image: url("../img/bottle.png")

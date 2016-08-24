@@ -1,0 +1,52 @@
+.list
+  padding-top: 12px
+  +clr
+
+  &__el
+    font-family: raleway, sans-serif
+    font-weight: 100
+
+  &__link
+    padding: 6px 0
+    line-height: 1.7
+    color: $grey
+    transition: all .3s ease-in-out
+    &:hover
+      color: $brown
+
+  &.is-horizontal
+
+    .list__el
+      float: left
+
+    .list__link
+      display: block
+      width: 180px
+      height: 180px
+      background-size: cover
+      background-repeat: no-repeat
+
+      &:hover
+        opacity: .6
+
+      &.bg-plum
+        background-image: url("../img/plum.jpg")
+
+      &.bg-apple
+        background-image: url("../img/apple.jpg")
+
+      &.bg-pie
+        background-image: url("../img/pie.jpg")
+
+      &.bg-radish
+        background-image: url("../img/radish.jpg")
+
+      &.bg-bow
+        background-image: url("../img/bow.jpg")
+
+      &.bg-dill
+        background-image: url("../img/dill.jpg")
+
+      &.bg-acorn
+        background-image: url("../img/acorn.jpg")
+

@@ -1,0 +1,84 @@
+.btn
+  display: inline-block
+  color: $brown
+  background-color: transparent
+  font-size: 16px
+  text-align: center
+  text-transform: uppercase
+  padding: 0 40px
+  height: 58px
+  line-height: 58px
+  cursor: pointer
+  font-family: raleway, sans-serif
+  letter-spacing: 1.6px
+  font-weight: 700
+  +tr(all .3s ease-in-out)
+
+  &:hover
+    color: $red
+
+  &__input
+    padding: 0
+    color: #fff
+    font-size: 16px
+    background-color: transparent
+    cursor: pointer
+    text-transform: uppercase
+
+    &:hover
+      color: #fff
+
+  &.is-big
+    height: 61px
+    line-height: 61px
+    max-width: 280px
+    padding: 0 87px
+    font-weight: 600
+    background-color: $red
+    border-right: 3px
+    letter-spacing: 1px
+    color: #fff
+    position: relative
+    overflow: hidden
+    z-index: 10
+
+    &:hover
+      color: #fff
+
+    &:before
+      content: ''
+      position: absolute
+      top: 50%
+      left: 50%
+      width: 120%
+      height: 550%
+      display: block
+      transform: translate3d(-50%, -50%, 0) scale(0)
+      transform-origin: 50% 50%
+      border-radius: 50%
+      background-color: $brown
+      opacity: 0
+      z-index: -10
+      transition: all .3s ease-in-out
+
+    &:hover:before
+      transform: translate3d(-50%, -50%, 0) scale(1)
+      opacity: 1
+
+  &.is-small
+    height: 35px
+    line-height: 35px
+    padding: 0 10px
+    font-size: 20px
+
+  &.is-top-right
+    position: absolute
+    top: 0
+    right: 0
+
+  &.is-red
+    color: $red
+    background-color: transparent
+
+    &:hover
+      color: $brown
