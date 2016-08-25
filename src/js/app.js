@@ -25,6 +25,6 @@ $(document).ready(function() {
     pagination: '.swiper-pagination',
     paginationClickable: true,
     spaceBetween: 30,
-    effect: 'fade'
+    effect: 'fade',
   });
 });

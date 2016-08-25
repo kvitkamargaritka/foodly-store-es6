@@ -212,67 +212,6 @@ img
 	position: relative
 	cursor: pointer
 	box-sizing: border-box
-	+clr
-
-	&__left,
-	&__right
-		width: 50%
-		float: left
-		background-repeat: no-repeat
-		background-size: cover
-		background-position: center center
-		height: 540px
-		text-align: center
-		border-bottom: 3px solid #fff
-		border-top: 3px solid #fff
-
-		&.bg-fruits
-			background-image: url("../img/fruits.jpg")
-
-		&.bg-rasper
-			background-image: url("../img/raspber.jpg")
-
-	&__left
-		border-right: 3px solid #fff
-
-		.badge
-			position: absolute
-			top: 50%
-			left: 9%
-
-		&:before
-			content: ''
-			position: absolute
-			top: 0
-			left: 0
-			width: 100%
-			height: 100%
-			background-color: $red
-			opacity: 0
-			transition: opacity .3s ease-in-out
-
-		&:hover:before
-			opacity: .2
-
-	&__right
-		.badge
-			position: absolute
-			top: 50%
-			right: 27%
-
-		&:before
-			content: ''
-			position: absolute
-			top: 0
-			left: 0
-			width: 100%
-			height: 100%
-			background-color: $red
-			opacity: 0
-			transition: opacity .3s ease-in-out
-
-		&:hover:before
-			opacity: .2
 
 	&__title
 		padding-top: 30px
@@ -281,6 +220,43 @@ img
 		font-family: 'Bitter', serif
 		font-weight: 600
 		font-size: 23px
+
+.product-big
+	width: 100%
+	float: left
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: center center
+	height: 540px
+	text-align: center
+	border: 3px solid #fff
+	border-left: none
+
+	&:before
+		content: ''
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		background-color: $red
+		opacity: 0
+		transition: opacity .3s ease-in-out
+
+		&:hover
+			&:before
+				opacity: .2
+
+	.badge
+		position: absolute
+		top: 50%
+		left: 9%
+
+	&.bg-fruits
+		background-image: url("../img/fruits.jpg")
+
+	&.bg-rasper
+		background-image: url("../img/raspber.jpg")
 
 
 

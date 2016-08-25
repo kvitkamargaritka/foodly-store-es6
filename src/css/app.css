@@ -296,83 +296,6 @@ img {
   position: relative;
   cursor: pointer;
   box-sizing: border-box;
-  *zoom: 1;
-}
-
-.sale:after {
-  content: " ";
-  display: table;
-  clear: both;
-}
-
-.sale__left, .sale__right {
-  width: 50%;
-  float: left;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  height: 540px;
-  text-align: center;
-  border-bottom: 3px solid #fff;
-  border-top: 3px solid #fff;
-}
-
-.sale__left.bg-fruits, .sale__right.bg-fruits {
-  background-image: url("../img/fruits.jpg");
-}
-
-.sale__left.bg-rasper, .sale__right.bg-rasper {
-  background-image: url("../img/raspber.jpg");
-}
-
-.sale__left {
-  border-right: 3px solid #fff;
-}
-
-.sale__left .badge {
-  position: absolute;
-  top: 50%;
-  left: 9%;
-}
-
-.sale__left:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #f06060;
-  opacity: 0;
-  -webkit-transition: opacity .3s ease-in-out;
-  transition: opacity .3s ease-in-out;
-}
-
-.sale__left:hover:before {
-  opacity: .2;
-}
-
-.sale__right .badge {
-  position: absolute;
-  top: 50%;
-  right: 27%;
-}
-
-.sale__right:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #f06060;
-  opacity: 0;
-  -webkit-transition: opacity .3s ease-in-out;
-  transition: opacity .3s ease-in-out;
-}
-
-.sale__right:hover:before {
-  opacity: .2;
 }
 
 .sale__title {
@@ -383,6 +306,49 @@ img {
   font-family: 'Bitter', serif;
   font-weight: 600;
   font-size: 23px;
+}
+
+.product-big {
+  width: 100%;
+  float: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 540px;
+  text-align: center;
+  border: 3px solid #fff;
+  border-left: none;
+}
+
+.product-big:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f06060;
+  opacity: 0;
+  -webkit-transition: opacity .3s ease-in-out;
+  transition: opacity .3s ease-in-out;
+}
+
+.product-big:before:hover:before {
+  opacity: .2;
+}
+
+.product-big .badge {
+  position: absolute;
+  top: 50%;
+  left: 9%;
+}
+
+.product-big.bg-fruits {
+  background-image: url("../img/fruits.jpg");
+}
+
+.product-big.bg-rasper {
+  background-image: url("../img/raspber.jpg");
 }
 
 .container {
@@ -1300,9 +1266,7 @@ img {
   position: relative;
   text-align: center;
   width: 100%;
-  height: 440px;
-  background-size: cover;
-  background-repeat: no-repeat;
+  min-height: 555px;
 }
 
 .season-item__descr {
@@ -1322,19 +1286,24 @@ img {
   right: 40%;
 }
 
+.season-item.bg-tomato, .season-item.bg-apple, .season-item.bg-pepper {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .season-item.bg-tomato {
   background-image: url("../img/slide_1.jpg");
-  background-position: 50% 68%;
+  background-position: 50% 80%;
 }
 
 .season-item.bg-pepper {
   background-image: url("../img/slide_2.jpg");
-  background-position: 50% 68%;
+  background-position: 50% 80%;
 }
 
 .season-item.bg-apple {
   background-image: url("../img/slide_3.jpg");
-  background-position: 50% 68%;
+  background-position: 50% 70%;
 }
 
 .season-item .badge {
@@ -1356,6 +1325,10 @@ img {
   content: " ";
   display: table;
   clear: both;
+}
+
+.offer .section-title {
+  margin-top: 80px;
 }
 
 .offer__product {
@@ -1392,6 +1365,7 @@ img {
 }
 
 .offer .bg-cover {
+  padding: 50px;
   background-image: url("../img/bg-tablecloth.png");
   background-repeat: repeat;
 }
