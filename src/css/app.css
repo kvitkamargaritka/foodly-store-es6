@@ -214,6 +214,10 @@ img {
   text-align: left;
 }
 
+.i-text-right {
+  text-align: right;
+}
+
 .i-mb-55 {
   margin-bottom: 55px;
 }
@@ -266,6 +270,8 @@ img {
   font-weight: 400;
   color: #5c4b51;
   cursor: pointer;
+  position: relative;
+  top: 55px;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
@@ -391,16 +397,34 @@ img {
   clear: both;
 }
 
+.row {
+  *zoom: 1;
+}
+
+.row:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
 .l-col-25 {
   width: 25%;
+  float: left;
 }
 
 .l-col-20 {
   width: 20%;
+  float: left;
+}
+
+.l-col-50 {
+  width: 50%;
+  float: left;
 }
 
 .l-col-60 {
   width: 60%;
+  float: left;
 }
 
 .header {
@@ -417,19 +441,10 @@ img {
 
 .header__top {
   padding: 10px 0;
-  *zoom: 1;
-}
-
-.header__top:after {
-  content: " ";
-  display: table;
-  clear: both;
 }
 
 .header__left {
   float: left;
-  position: relative;
-  top: 55px;
 }
 
 .header__center {
@@ -438,8 +453,6 @@ img {
 
 .header__right {
   float: left;
-  position: relative;
-  top: 55px;
 }
 
 .footer {
@@ -523,6 +536,12 @@ img {
   position: absolute;
   right: 20px;
   top: 20px;
+}
+
+.badge.is-center {
+  position: absolute;
+  left: 45%;
+  top: 33%;
 }
 
 .social {
@@ -1155,7 +1174,8 @@ img {
 
 .product__name {
   font-size: 18px;
-  font-family: 'bitter600', Arial, sans-serif;
+  font-family: 'Bitter', serif;
+  font-weight: 600;
 }
 
 .product__name:hover {
@@ -1193,8 +1213,8 @@ img {
 
 .swiper-container-horizontal > .swiper-pagination {
   top: 50%;
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
+  -webkit-transform: rotate(90deg) translateY(-200%) translateX(-6%) !important;
+          transform: rotate(90deg) translateY(-200%) translateX(-6%) !important;
 }
 
 .swiper-pagination-bullet {
@@ -1203,6 +1223,23 @@ img {
   border: 4px solid #fff;
   border-radius: 50px;
   background-color: transparent;
+}
+
+.swiper-pagination-bullet:first-child {
+  background-image: url(https://cdn.shopify.com/s/files/1/1148/3974/t/7/assets/img_thumb_homepage_slide_1.jpg?2525999231350056249);
+}
+
+.swiper-pagination-bullet:nth-child(2) {
+  background-image: url(https://cdn.shopify.com/s/files/1/1148/3974/t/7/assets/img_thumb_homepage_slide_2.jpg?2525999231350056249);
+}
+
+.swiper-pagination-bullet:last-child {
+  background-image: url(https://cdn.shopify.com/s/files/1/1148/3974/t/7/assets/img_thumb_homepage_slide_3.jpg?2525999231350056249);
+}
+
+.swiper-pagination-bullet:hover {
+  -webkit-transform: scale(1.34);
+          transform: scale(1.34);
 }
 
 .arrow-button-next,
@@ -1225,6 +1262,11 @@ img {
   background-color: #5c4b51;
 }
 
+.arrow-button-next .line.is-right-18,
+.arrow-button-prev .line.is-right-18 {
+  right: 18px;
+}
+
 .arrow-button-next .triangle,
 .arrow-button-prev .triangle {
   position: absolute;
@@ -1237,9 +1279,9 @@ img {
           transform: rotate(-90deg);
 }
 
-.arrow-button-next .triangle.is-left,
-.arrow-button-prev .triangle.is-left {
-  left: 63px;
+.arrow-button-next .triangle.is-left-44,
+.arrow-button-prev .triangle.is-left-44 {
+  left: 44px;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
 }
@@ -1267,6 +1309,19 @@ img {
   font-size: 26px;
 }
 
+.season-item__info {
+  position: absolute;
+  top: 150px;
+}
+
+.season-item__info.is-left {
+  left: 40%;
+}
+
+.season-item__info.is-right {
+  right: 40%;
+}
+
 .season-item.bg-tomato {
   background-image: url("../img/slide_1.jpg");
   background-position: 50% 68%;
@@ -1286,6 +1341,67 @@ img {
   position: absolute;
   top: 26%;
   left: 33%;
+}
+
+.season-item .badge.is-center {
+  top: 33%;
+  left: 45%;
+}
+
+.offer {
+  *zoom: 1;
+}
+
+.offer:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+.offer__product {
+  font-size: 18px;
+  font-family: 'Bitter', serif;
+  font-weight: 600;
+}
+
+.offer__product:hover {
+  color: #f06060;
+}
+
+.offer__spec {
+  display: block;
+  color: #d1cacc;
+  font-size: 14px;
+  font-family: 'Bitter', serif;
+  font-weight: 400;
+}
+
+.offer__spec a {
+  display: inline-block;
+}
+
+.offer__price {
+  color: #f06060;
+  font-size: 32px;
+}
+
+.offer__unit {
+  font-family: 'Bitter', serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.offer .bg-cover {
+  background-image: url("../img/bg-tablecloth.png");
+  background-repeat: repeat;
+}
+
+.offer .bg-plums {
+  display: block;
+  width: 100%;
+  height: 340px;
+  background: url("../img/plums.png") no-repeat center 50%;
+  background-size: contain;
 }
 
 .btn {

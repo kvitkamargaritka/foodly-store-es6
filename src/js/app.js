@@ -1,36 +1,30 @@
 $(document).ready(function() {
 
+  var swiper = '.swiper-container';
 
-  var mySwiper = new Swiper ('.swiper-container.is-small', {
-    // Optional parameters
+  new Swiper (swiper + '.is-small', {
     direction: 'horizontal',
     loop: true,
-
-    // Navigation arrows
     nextButton: '.swiper-button-next',
     prevButton: '.swiper-button-prev',
-
-    // And if we need scrollbar
     scrollbar: '.swiper-scrollbar'
   });
 
-  var mySwiper2 = new Swiper ('.swiper-container.is-product', {
-    // Optional parameters
+  new Swiper (swiper + '.is-product', {
     direction: 'horizontal',
     loop: true,
     slidesPerView: 4,
-
-    // Navigation arrows
     nextButton: '.arrow-button-next',
     prevButton: '.arrow-button-prev'
 
   });
 
-  var mySwiper3 = new Swiper ('.swiper-container.is-general', {
-    // Optional parameters
+  new Swiper (swiper + '.is-general', {
     direction: 'horizontal',
+    loop: true,
     pagination: '.swiper-pagination',
-    paginationClickable: true
+    paginationClickable: true,
+    spaceBetween: 30,
+    effect: 'fade'
   });
-
 });

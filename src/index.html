@@ -33,44 +33,46 @@
   <div class="container">
     <div class="header__top">
 
-      <div class="header__left l-col-20">
-        <div class="currency i-text-upper">
+      <div class="row">
+        <div class="l-col-20">
+          <div class="currency i-text-upper">
           <span class="currency__text">usd
             <i class="fa fa-plus"></i>
           </span>
 
-          <!--<ul class="currency__dropdown i-text-center">-->
-          <!--<li class="currency__el">usd</li>-->
-          <!--<li class="currency__el">gbp</li>-->
-          <!--<li class="currency__el">cad</li>-->
-          <!--<li class="currency__el">aud</li>-->
-          <!--<li class="currency__el">eur</li>-->
-          <!--</ul>-->
-        </div><!-- end currency -->
-      </div><!-- end header__left -->
+            <!--<ul class="currency__dropdown i-text-center">-->
+            <!--<li class="currency__el">usd</li>-->
+            <!--<li class="currency__el">gbp</li>-->
+            <!--<li class="currency__el">cad</li>-->
+            <!--<li class="currency__el">aud</li>-->
+            <!--<li class="currency__el">eur</li>-->
+            <!--</ul>-->
+          </div><!-- end currency -->
+        </div><!-- end header__left -->
 
-      <div class="header__center l-col-60">
-        <div class="logo">
-          <div class="logo__left">
-            <span class="logo__descr">Organic food by Whytes'</span>
-          </div>
-          <div class="logo__center">
-            <a href="#" class="logo__link">
-              <img src="img/logo.png" alt="logo-foodly-store"/> 
-            </a>
-          </div>
-          <div class="logo__right">
-            <span class="logo__descr">from Manitoba, Canada</span>
-          </div>
-        </div><!-- end logo -->
-      </div><!-- end header__center -->
+        <div class="l-col-60">
+          <div class="logo">
+            <div class="logo__left">
+              <span class="logo__descr">Organic food by Whytes'</span>
+            </div>
+            <div class="logo__center">
+              <a href="#" class="logo__link">
+                <img src="img/logo.png" alt="logo-foodly-store"/> 
+              </a>
+            </div>
+            <div class="logo__right">
+              <span class="logo__descr">from Manitoba, Canada</span>
+            </div>
+          </div><!-- end logo -->
+        </div><!-- end header__center -->
 
-      <div class="header__right l-col-20">
-        <span class="cart">$0.00
-          <i class="fa fa-lock"></i>
-          <span class="cart__counter is-right-top">0</span>
-        </span>
-      </div>
+        <div class="l-col-20">
+          <span class="cart">$0.00
+            <i class="fa fa-lock"></i>
+            <span class="cart__counter is-right-top">0</span>
+          </span>
+        </div>
+      </div><!-- end row -->
 
     </div><!-- end header__top -->
 
@@ -165,7 +167,7 @@
 
 <div class="row">
   <!-- Slider main container -->
-  <div class="swiper-container is-general">
+  <div class="swiper-container is-general js-swiper">
     <!-- Additional required wrapper -->
     <div class="swiper-wrapper">
       <!-- Slides -->
@@ -180,21 +182,27 @@
         </div>
       </div>
       <div class="swiper-slide">
-        <div class="season-item bg-tomato">
-          <h1 class="title i-weight-200 i-text-center i-text-upper">tomato season</h1>
-          <p class="season-item__descr title is-bitter-ital">nutritious & delicious</p>
-          <span class="badge is-big is-red">
-            <span class="badge__price is-white">$11.00</span>
+        <div class="season-item bg-pepper">
+          <h1 class="title i-weight-200 i-text-center i-text-upper">squash up</h1>
+          <p class="season-item__descr title is-bitter-ital">get full plate of energy</p>
+          <span class="badge is-big is-blue">
+            <span class="badge__price is-white">$1.75</span>
             <i class="badge__text is-white">start point</i>
           </span>
         </div>
       </div>
       <div class="swiper-slide">
-        <div class="season-item bg-tomato">
-          <h1 class="title i-weight-200 i-text-center i-text-upper">tomato season</h1>
-          <p class="season-item__descr title is-bitter-ital">nutritious & delicious</p>
-          <span class="badge is-big is-red">
-            <span class="badge__price is-white">$11.00</span>
+        <div class="season-item bg-apple">
+          <div class="slide-item__info is-left">
+            <h1 class="title i-weight-200 i-text-upper">apple pie?</h1>
+            <p class="season-item__descr title is-bitter-ital">of Gala Cultivar</p>
+          </div>
+          <div class="slide-item__info is-right">
+            <h1 class="title i-weight-200 i-text-upper">Yes, please</h1>
+            <p class="season-item__descr title is-bitter-ital">Mmmmm...</p>
+          </div>
+          <span class="badge is-center is-big is-blue">
+            <span class="badge__price is-white">$2.11</span>
             <i class="badge__text is-white">start point</i>
           </span>
         </div>
@@ -235,7 +243,7 @@
 </div>
 
 <div class="row">
-  <div class="swiper-container is-product">
+  <div class="swiper-container is-product js-swiper">
     <!-- Additional required wrapper -->
     <div class="swiper-wrapper">
       <!-- Slides -->
@@ -337,10 +345,42 @@
       <span class="triangle"></span>
     </div>
     <div class="arrow-button-next">
-      <span class="line"></span>
-      <span class="triangle is-left"></span>
+      <span class="line is-right-18"></span>
+      <span class="triangle is-left-44"></span>
     </div>
   </div>
+</div>
+
+<div class="row bg-white i-top-bottom-50">
+  <div class="offer">
+    <div class="container">
+      <div class="row">
+        <div class="l-col-50">
+          <div class="section-title">
+            <h1 class="title i-weight-200 i-text-upper">Special offer</h1>
+            <span class="bg-title is-y-37 is-x-85">Fall</span>
+          </div>
+          <a href="#" class="offer__product i-text-center">Stanley Plums</a>
+          <span class="offer__spec i-text-center">
+            <span>Harvest 2015</span>
+            <span>| In stock | Bunch</span>
+          </span>
+          <div class="offer__expense i-text-center">
+            <span class="offer__price i-weight-200">$4.25</span>
+            <p class="offer__unit">per kilogram</p>
+            <span class="btn is-big">add to bag</span>
+          </div>
+        </div>
+        <div class="l-col-50">
+          <div class="offer__img bg-cover">
+            <a href="#" class="offer__link">
+              <span class="bg-plums"></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div><!-- end offer -->
+  </div><!-- end container -->
 </div>
 
 <div class="row bg-white i-top-bottom-50">
@@ -352,7 +392,7 @@
       <span class="bg-title is-small is-grey is-y-46 is-x-30">The</span>
     </div>
 
-    <div class="swiper-container is-small">
+    <div class="swiper-container is-small js-swiper">
       <!-- Additional required wrapper -->
       <div class="swiper-wrapper">
         <!-- Slides -->

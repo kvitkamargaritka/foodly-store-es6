@@ -16,8 +16,8 @@
 
 .swiper-container-horizontal > .swiper-pagination
   top: 50%
-  transform: rotate(90deg)
-//left: 100%
+  transform: rotate(90deg) translateY(-200%) translateX(-6%) !important
+
 
 .swiper-pagination-bullet
   width: 70px
@@ -25,6 +25,21 @@
   border: 4px solid #fff
   border-radius: 50px
   background-color: transparent
+
+  &:first-child
+    background-image: url(https://cdn.shopify.com/s/files/1/1148/3974/t/7/assets/img_thumb_homepage_slide_1.jpg?2525999231350056249)
+
+  &:nth-child(2)
+    background-image: url(https://cdn.shopify.com/s/files/1/1148/3974/t/7/assets/img_thumb_homepage_slide_2.jpg?2525999231350056249)
+
+  &:last-child
+    background-image: url(https://cdn.shopify.com/s/files/1/1148/3974/t/7/assets/img_thumb_homepage_slide_3.jpg?2525999231350056249)
+  &:hover
+    transform: scale(1.34)
+
+//.swiper-pagination-bullet-active
+//  border-color: transparent
+//  opacity: .3
 
 .arrow-button-next,
 .arrow-button-prev
@@ -43,6 +58,9 @@
     height: 2px
     background-color: $brown
 
+    &.is-right-18
+      right: 18px
+
   .triangle
     position: absolute
     top: 12px
@@ -52,8 +70,8 @@
     border-color: transparent transparent #5c4b51 transparent
     transform: rotate(-90deg)
 
-    &.is-left
-      left: 63px
+    &.is-left-44
+      left: 44px
       transform: rotate(90deg)
 
 .arrow-button-prev
