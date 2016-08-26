@@ -234,23 +234,6 @@ img {
   background-color: #fff;
 }
 
-.offer {
-  position: relative;
-  font-size: 19px;
-  font-family: 'Bitter', serif;
-  font-weight: 600;
-}
-
-.offer:after {
-  content: '';
-  position: absolute;
-  bottom: -10px;
-  right: 0;
-  height: 3px;
-  width: 130px;
-  background-color: #f3b562;
-}
-
 .insta {
   padding: 50px 0;
   border-bottom: 2px solid #fff;
@@ -308,6 +291,37 @@ img {
   font-size: 23px;
 }
 
+.sale__info {
+  position: relative;
+}
+
+.sale__offer {
+  position: absolute;
+  top: 150px;
+  right: 16px;
+  font-size: 19px;
+  font-family: 'Bitter', serif;
+  font-weight: 600;
+}
+
+.sale__offer:after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  right: 0;
+  height: 3px;
+  width: 400px;
+  background-color: #f3b562;
+}
+
+.sale__offer.is-text-blue {
+  color: #8cbeb2;
+}
+
+.sale__offer.is-text-blue:after {
+  background-color: #8cbeb2;
+}
+
 .product-big {
   width: 100%;
   float: left;
@@ -335,12 +349,6 @@ img {
 
 .product-big:before:hover:before {
   opacity: .2;
-}
-
-.product-big .badge {
-  position: absolute;
-  top: 50%;
-  left: 9%;
 }
 
 .product-big.bg-fruits {
@@ -396,6 +404,7 @@ img {
 .header {
   width: 100%;
   text-align: center;
+  padding: 0 30px;
   *zoom: 1;
 }
 
@@ -494,8 +503,12 @@ img {
 
 .badge.is-left-20 {
   position: absolute;
-  left: 20px;
-  top: 20px;
+  left: 20%;
+  top: 120px;
+}
+
+.badge.is-left-64 {
+  left: 64%;
 }
 
 .badge.is-right-20 {
@@ -1023,6 +1036,15 @@ img {
   transition: all 0.3s ease-in-out;
 }
 
+.input__quantity {
+  text-align: center;
+  max-width: 80px;
+  height: 40px;
+  background-color: #f5f4f4;
+  border: 1px solid #f5f4f4;
+  border-right: 3px;
+}
+
 .input.is-search {
   position: relative;
   -webkit-transition: all 0.3s ease-in-out;
@@ -1179,8 +1201,8 @@ img {
 
 .swiper-container-horizontal > .swiper-pagination {
   top: 50%;
-  -webkit-transform: rotate(90deg) translateY(-200%) translateX(-6%) !important;
-          transform: rotate(90deg) translateY(-200%) translateX(-6%) !important;
+  -webkit-transform: rotate(90deg) translateY(-200%) translateX(-9%) !important;
+          transform: rotate(90deg) translateY(-200%) translateX(-9%) !important;
 }
 
 .swiper-pagination-bullet {
@@ -1362,6 +1384,11 @@ img {
   font-family: 'Bitter', serif;
   font-weight: 600;
   font-style: italic;
+  padding-bottom: 20px;
+}
+
+.offer__form {
+  max-width: 280px;
 }
 
 .offer .bg-cover {
@@ -1487,7 +1514,6 @@ img {
 
 .item__name {
   text-transform: uppercase;
-  margin: 20px 0;
   line-height: 1.4;
 }
 

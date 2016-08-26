@@ -161,21 +161,6 @@ img
 .bg-white
 	background-color: #fff
 
-.offer
-	position: relative
-	font-size: 19px
-	font-family: 'Bitter', serif
-	font-weight: 600
-
-	&:after
-		content: ''
-		position: absolute
-		bottom: -10px
-		right: 0
-		height: 3px
-		width: 130px
-		background-color: $yellow
-
 .insta
 	padding: 50px 0
 	border-bottom: 2px solid #fff
@@ -221,6 +206,31 @@ img
 		font-weight: 600
 		font-size: 23px
 
+	&__info
+		position: relative
+
+	&__offer
+		position: absolute
+		top: 150px
+		right: 16px
+		font-size: 19px
+		font-family: 'Bitter', serif
+		font-weight: 600
+
+		&:after
+			content: ''
+			position: absolute
+			bottom: -10px
+			right: 0
+			height: 3px
+			width: 400px
+			background-color: $yellow
+		&.is-text-blue
+			color: $blue
+			&:after
+				background-color: $blue
+
+
 .product-big
 	width: 100%
 	float: left
@@ -246,17 +256,18 @@ img
 		&:hover
 			&:before
 				opacity: .2
-
-	.badge
-		position: absolute
-		top: 50%
-		left: 9%
+  //
+	//.badge
+	//	position: absolute
+	//	top: 50%
+	//	//left: 9%
 
 	&.bg-fruits
 		background-image: url("../img/fruits.jpg")
 
 	&.bg-rasper
 		background-image: url("../img/raspber.jpg")
+
 
 
 
