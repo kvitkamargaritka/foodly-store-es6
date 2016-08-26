@@ -234,6 +234,10 @@ img {
   background-color: #fff;
 }
 
+.bg-grey {
+  background-color: #f5f4f4;
+}
+
 .insta {
   padding: 50px 0;
   border-bottom: 2px solid #fff;
@@ -357,6 +361,41 @@ img {
 
 .product-big.bg-rasper {
   background-image: url("../img/raspber.jpg");
+}
+
+.quantity {
+  position: relative;
+  display: inline-block;
+  right: 60px;
+  margin: 0 20px;
+  width: 80px;
+  height: 40px;
+  line-height: 40px;
+  background-color: #f5f4f4;
+}
+
+.quantity:after {
+  position: absolute;
+  content: '';
+  right: -16px;
+  top: 11px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 8px 0 8px 12px;
+  border-color: transparent transparent transparent #ada2a4;
+}
+
+.quantity:before {
+  position: absolute;
+  content: '';
+  left: -16px;
+  top: 11px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 8px 12px 8px 0;
+  border-color: transparent #ada2a4 transparent transparent;
 }
 
 .container {
@@ -507,8 +546,10 @@ img {
   top: 120px;
 }
 
-.badge.is-left-64 {
-  left: 64%;
+.badge.is-left-200 {
+  position: absolute;
+  left: 200px;
+  top: 120px;
 }
 
 .badge.is-right-20 {
@@ -1036,19 +1077,15 @@ img {
   transition: all 0.3s ease-in-out;
 }
 
-.input__quantity {
-  text-align: center;
-  max-width: 80px;
-  height: 40px;
-  background-color: #f5f4f4;
-  border: 1px solid #f5f4f4;
-  border-right: 3px;
-}
-
 .input.is-search {
   position: relative;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+}
+
+.input.is-number {
+  background-color: transparent;
+  text-align: center;
 }
 
 .bg-title {
@@ -1387,8 +1424,8 @@ img {
   padding-bottom: 20px;
 }
 
-.offer__form {
-  max-width: 280px;
+.offer__action {
+  padding: 20px 0;
 }
 
 .offer .bg-cover {
