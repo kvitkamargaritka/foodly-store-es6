@@ -301,7 +301,7 @@ img {
 
 .sale__offer {
   position: absolute;
-  top: 150px;
+  top: 55%;
   right: 16px;
   font-size: 19px;
   font-family: 'Bitter', serif;
@@ -327,6 +327,7 @@ img {
 }
 
 .product-big {
+  position: relative;
   width: 100%;
   float: left;
   background-repeat: no-repeat;
@@ -351,7 +352,7 @@ img {
   transition: opacity .3s ease-in-out;
 }
 
-.product-big:before:hover:before {
+.product-big:hover:before {
   opacity: .2;
 }
 
@@ -543,13 +544,13 @@ img {
 .badge.is-left-20 {
   position: absolute;
   left: 20%;
-  top: 120px;
+  top: 50%;
 }
 
-.badge.is-left-200 {
+.badge.is-left-185 {
   position: absolute;
-  left: 200px;
-  top: 120px;
+  left: 185px;
+  top: 50%;
 }
 
 .badge.is-right-20 {
