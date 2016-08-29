@@ -331,6 +331,8 @@ img {
     color: #5c4b51; }
     .mobile-menu__el:hover {
       background-color: #f5f4f4; }
+  .mobile-menu .img {
+    margin: 0 auto; }
 
 .container {
   width: 1070px;
