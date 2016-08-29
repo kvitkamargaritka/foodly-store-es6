@@ -34,18 +34,21 @@
 
     <div class="row">
       <div class="l-col-20">
+        <button type="submit" class="btn is-small is-top-right">
+          <i class="fa fa-search"></i>
+        </button>
         <div class="currency i-text-upper">
         <span class="currency__text">usd
           <i class="fa fa-plus"></i>
         </span>
 
-          <!--<ul class="currency__dropdown i-text-center">-->
-          <!--<li class="currency__el">usd</li>-->
-          <!--<li class="currency__el">gbp</li>-->
-          <!--<li class="currency__el">cad</li>-->
-          <!--<li class="currency__el">aud</li>-->
-          <!--<li class="currency__el">eur</li>-->
-          <!--</ul>-->
+          <ul class="currency__dropdown js-currency i-text-center">
+          <li class="currency__el">usd</li>
+          <li class="currency__el">gbp</li>
+          <li class="currency__el">cad</li>
+          <li class="currency__el">aud</li>
+          <li class="currency__el">eur</li>
+          </ul>
         </div><!-- end currency -->
       </div><!-- end header__left -->
 
@@ -71,6 +74,36 @@
           <span class="cart__counter is-right-top">0</span>
         </span>
       </div>
+      <div class="popup js-popup">
+
+        <div class="popup__top">
+          <div class="popup__left">
+            <h5 class="title is-bitter i-text-upper">our food bag</h5>
+          </div>
+          <div class="popup__right">
+            <span class="btn js-close i-weight-700">close</span>
+          </div>
+        </div>
+
+        <div class="popup__bottom">
+          <div class="popup__cart">
+            <div class="popup__wrapper i-text-center">
+              <h5 class="title is-bitter i-text-upper">oh, nope!</h5>
+              <p class="popup__text i-pt-20">
+                Your bag seems to be empty and you are probably hungry.
+              </p>
+              <p class="popup__text i-mb-55">
+                Look at our fresh <strong>special offers</strong>
+                ,you would like it.
+              </p>
+              <a href="#" class="btn is-red i-weight-700">
+                check it out
+              </a>
+            </div>
+          </div><!-- end popup__cart -->
+        </div><!-- end popup__bottom -->
+
+      </div><!-- end popup -->
     </div><!-- end row -->
 
   </div><!-- end header__top -->
@@ -161,6 +194,51 @@
   </div><!-- end header__bottom -->
 
 </header>
+
+<div class="mobile-menu">
+
+  <div class="mobile-menu__top">
+
+    <div class="logo i-text-center">
+      <a href="#" class="logo__link">
+        <img src="img/logo.png" alt="logo-foodly-store"/> 
+      </a>
+    </div>
+
+  </div>
+
+  <div class="mobile-menu__bottom">
+
+    <ul class="mobile-menu__list">
+      <li class="mobile-menu__el">
+        <a href="#" class="">Home</a>
+      </li>
+      <li class="mobile-menu__el">
+        <a href="#" class="">Products
+          <span class="plus"></span>
+        </a>
+      </li>
+      <li class="mobile-menu__el">
+        <a href="#" class="">Blogs</a>
+      </li>
+      <li class="mobile-menu__el">
+        <a href="#" class="">Recipes</a>
+      </li>
+      <li class="mobile-menu__el">
+        <a href="#" class="">About us</a>
+      </li>
+      <li class="mobile-menu__el">
+        <a href="#" class="">Contact</a>
+      </li>
+      <li class="mobile-menu__el">
+        <a href="#" class="">Search</a>
+      </li>
+      <li class="mobile-menu__el">
+        <a href="#" class="">Currency</a>
+      </li>
+    </ul>
+
+</div><!-- end mobile-menu -->
 
 <div class="row">
   <!-- Slider main container -->
@@ -752,7 +830,10 @@
       <a href="#" class="copyright__link">Buy Foodly Theme</a>
     </div>
   </div>
+
 </footer>
+
+<div class="overlay"></div>
 
 <script src="lib/system.js"></script>
 <script src="config.js"></script>

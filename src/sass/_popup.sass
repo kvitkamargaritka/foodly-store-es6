@@ -1,9 +1,15 @@
 .popup
   background-color: $bgGrey
-  max-width: 640px
-  border: 1px solid #000
-  //height: 100%
-  //position: absolute
+  width: 640px
+  min-height: 100vh
+  position: absolute
+  top: 30px
+  right: 30px
+  display: none
+  z-index: 50
+
+  &.is-visible
+    display: block
 
   &__top
     padding: 20px
@@ -28,5 +34,5 @@
     font-size: 14px
 
   h5
-    //padding-bottom: 20px
     display: inline-block
+

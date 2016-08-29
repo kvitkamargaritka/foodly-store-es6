@@ -16,7 +16,6 @@ $(document).ready(function() {
     slidesPerView: 4,
     nextButton: '.arrow-button-next',
     prevButton: '.arrow-button-prev'
-
   });
 
   new Swiper (swiper + '.is-general', {
@@ -25,6 +24,21 @@ $(document).ready(function() {
     pagination: '.swiper-pagination',
     paginationClickable: true,
     spaceBetween: 30,
-    effect: 'fade',
+    effect: 'fade'
   });
+
+  $('.cart').click (function () {
+    $('.js-popup').addClass('is-visible');
+    $('.overlay').addClass('is-visible');
+  });
+  $('.js-close').click (function () {
+    $('.js-popup').removeClass('is-visible');
+    $('.overlay').removeClass('is-visible');
+  });
+
+  $('.currency').click (function () {
+    $('.js-currency').addClass('is-visible');
+  });
+
+
 });

@@ -260,11 +260,6 @@ img
 	&:hover
 		&:before
 			opacity: .2
-  //
-	//.badge
-	//	position: absolute
-	//	top: 50%
-	//	//left: 9%
 
 	&.bg-fruits
 		background-image: url("../img/fruits.jpg")
@@ -303,6 +298,40 @@ img
 		border-style: solid
 		border-width: 8px 12px 8px 0
 		border-color: transparent #ada2a4 transparent transparent
+
+.overlay
+	position: fixed
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	background-color: $brown
+	z-index: 5
+	transition: opacity 450ms ease-in-out, visibility 450ms ease-in-out
+	display: none
+
+	&.is-visible
+		opacity: .6
+		display: block
+
+.mobile-menu
+	width: 320px
+	height: 100%
+	background-color: #fff
+	position: absolute
+	top: 0
+	left: 0
+	z-index: 50
+
+	&__el
+		width: 100%
+		padding: 15px 38px 14px 38px
+		color: $brown
+
+		&:hover
+			background-color: $bgGrey
+
+
 
 
 
