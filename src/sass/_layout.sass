@@ -1,7 +1,14 @@
 .container
   width: 1070px
+  padding: 0 30px
   margin: 0 auto
   +clr
+
+  +r(1070)
+    width: 980px
+
+  +r(768)
+    width: 100%
 
 .row
   +clr
@@ -17,6 +24,10 @@
 .l-col-50
   width: 50%
   float: left
+
+.xs-col-100
+  +r(768)
+    width: 100%!important
 
 .l-col-60
   width: 60%

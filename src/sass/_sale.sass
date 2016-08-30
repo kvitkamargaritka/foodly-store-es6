@@ -1,0 +1,37 @@
+.sale
+  width: 100%
+  position: relative
+  cursor: pointer
+  box-sizing: border-box
+
+  &__title
+    padding-top: 30px
+
+  &__descr
+    font-family: 'Bitter', serif
+    font-weight: 600
+    font-size: 23px
+
+  &__info
+    position: relative
+
+  &__offer
+    position: absolute
+    top: 55%
+    right: 16px
+    font-size: 19px
+    font-family: 'Bitter', serif
+    font-weight: 600
+
+    &:after
+      content: ''
+      position: absolute
+      bottom: -10px
+      right: 0
+      height: 3px
+      width: 400px
+      background-color: $yellow
+    &.is-text-blue
+      color: $blue
+      &:after
+        background-color: $blue

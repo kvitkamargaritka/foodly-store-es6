@@ -1,0 +1,14 @@
+.overlay
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  background-color: $brown
+  z-index: 5
+  transition: opacity 450ms ease-in-out, visibility 450ms ease-in-out
+  display: none
+
+  &.is-visible
+    opacity: .6
+    display: block

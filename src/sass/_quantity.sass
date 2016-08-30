@@ -1,0 +1,31 @@
+.quantity
+  position: relative
+  display: inline-block
+  right: 60px
+  margin: 0 20px
+  width: 80px
+  height: 40px
+  line-height: 40px
+  background-color: #f5f4f4
+
+  &:after
+    position: absolute
+    content: ''
+    right: -16px
+    top: 11px
+    width: 0
+    height: 0
+    border-style: solid
+    border-width: 8px 0 8px 12px
+    border-color: transparent transparent transparent #ada2a4
+
+  &:before
+    position: absolute
+    content: ''
+    left: -16px
+    top: 11px
+    width: 0
+    height: 0
+    border-style: solid
+    border-width: 8px 12px 8px 0
+    border-color: transparent #ada2a4 transparent transparent

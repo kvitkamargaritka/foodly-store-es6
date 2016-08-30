@@ -1,0 +1,30 @@
+.mobile-menu
+  width: 320px
+  height: 100%
+  padding: 15px
+  background-color: #fff
+  position: absolute
+  top: 0
+  left: 0
+  z-index: 50
+  display: none
+  transition: all .3s ease-in-out
+
+  &.is-visible
+    display: block
+
+  &__el
+    width: 100%
+    padding: 15px 38px 14px 38px
+    color: $brown
+
+    &:hover
+      background-color: $bgGrey
+
+  img
+    margin: 0 auto
+
+  .btn
+    position: absolute
+    top: 0
+    right: 10px
