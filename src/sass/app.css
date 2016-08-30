@@ -186,6 +186,9 @@ img {
 .insta {
   padding: 50px 0;
   border-bottom: 2px solid #fff; }
+  @media only screen and (max-width: 768px) {
+    .insta {
+      padding: 50px 24px; } }
   .insta__top {
     text-align: center; }
   .insta__descr {
@@ -204,8 +207,10 @@ img {
   .currency:hover {
     color: #f06060; }
 
-.cart i {
-  font-size: 25px; }
+.cart {
+  right: -50px; }
+  .cart i {
+    font-size: 25px; }
 
 .section-title {
   position: relative;
@@ -567,8 +572,7 @@ img {
 
 .currency {
   color: #5c4b51;
-  position: relative;
-  top: 25px; }
+  position: relative; }
   @media only screen and (max-width: 768px) {
     .currency {
       display: none; } }
@@ -618,7 +622,7 @@ img {
   @media only screen and (max-width: 768px) {
     .logo__descr {
       display: block;
-      transform: translatex(40%); } }
+      transform: translate3d(0, 0, 0); } }
 .logo__link {
   line-height: 1px;
   margin: 0 5px; }
@@ -1006,10 +1010,6 @@ img {
     line-height: 35px;
     padding: 0 10px;
     font-size: 20px; }
-  .btn.is-top-right {
-    position: absolute;
-    top: 0;
-    right: -35px; }
   .btn.is-red {
     color: #f06060;
     background-color: transparent; }
@@ -1042,7 +1042,14 @@ img {
       background-image: url("../img/bottle.png"); }
 
 .hamburger {
-  display: block; }
+  display: none; }
+  @media only screen and (max-width: 768px) {
+    .hamburger {
+      display: block;
+      position: relative;
+      top: 10px;
+      left: 10px;
+      cursor: pointer; } }
 
 #nav-icon {
   width: 35px;
@@ -1110,6 +1117,9 @@ img {
     position: absolute;
     top: 0;
     right: 10px; }
+  @media only screen and (max-width: 768px) {
+    .mobile-menu .logo__link {
+      display: block; } }
 
 .form {
   position: relative; }
@@ -1120,9 +1130,13 @@ img {
     cursor: pointer; }
   .form.is-search {
     width: 0;
-    top: 50px;
+    position: absolute;
+    top: 55px;
     left: 30px;
     transition: all 0.3s ease; }
+    @media only screen and (max-width: 768px) {
+      .form.is-search {
+        display: none; } }
     .form.is-search.is-open {
       width: 300px; }
       .form.is-search.is-open .btn {

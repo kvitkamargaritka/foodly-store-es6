@@ -9,9 +9,12 @@
 
   &.is-search
     width: 0
-    top: 50px
+    position: absolute
+    top: 55px
     left: 30px
     transition: all .3s ease
+    +r(768)
+      display: none
 
     &.is-open
       width: 300px
